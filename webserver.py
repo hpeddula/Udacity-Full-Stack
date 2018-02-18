@@ -129,8 +129,8 @@ class handler(BaseHTTPRequestHandler):
                 #     output +="<html><body>"
                 #     output +="<li>"+messagecontent[i]+"</li>"
                 #     output +="</body></html>"
-                # self.wfile.write(str.encode(output))
-                # print(output)
+                self.wfile.write(str.encode(output))
+                print(output)
 
         except:
             pass
